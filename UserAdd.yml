@@ -1,5 +1,4 @@
 ---
  - hosts: all
-       name: Create a login user
        user:
-          name: TestUser
+          name: "TestUser"
