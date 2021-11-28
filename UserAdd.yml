@@ -3,4 +3,3 @@
        name: Create a login user
        user:
           name: TestUser
-          password: "Test!@123"
