@@ -1,5 +1,7 @@
 ---
- - name: This command will change the working directory to somedir/
-   hosts: all
-   ansible.builtin.shell:
-     cmd: ls -l
+ - name: Create a login user
+     user:
+      name: TestUser
+      password: "Test!@123"
+      groups: # Empty by default, here we give it some groups
+       - sysadmin
