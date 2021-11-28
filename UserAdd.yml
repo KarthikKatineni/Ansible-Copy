@@ -1,6 +1,6 @@
 ---
  - name: Create a login user
-     user:
+   user:
       name: TestUser
       password: "Test!@123"
       groups: # Empty by default, here we give it some groups
