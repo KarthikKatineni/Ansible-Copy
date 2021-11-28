@@ -1,4 +1,6 @@
 ---
  - hosts: all
-       user:
-          name: "TestUser"
+   tasks:
+     - name: create deployment user
+       user: 
+          name: deployer
