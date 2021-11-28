@@ -1,7 +1,6 @@
 ---
- - name: Create a login user
-   user:
-      name: TestUser
-      password: "Test!@123"
-      groups: # Empty by default, here we give it some groups
-       - sysadmin
+ - hosts: all
+       name: Create a login user
+       user:
+          name: TestUser
+          password: "Test!@123"
