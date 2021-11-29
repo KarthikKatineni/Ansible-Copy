@@ -1,6 +1,10 @@
 ---
  - hosts: all
    tasks:
-     - name: create deployment user
-       user: 
-          name: deployer
+     - name: add a user
+       expect:
+          command: sudo su root
+          responses:
+             (?i)password: "K@rth1k#472"
+          command: useradd ging1
+
